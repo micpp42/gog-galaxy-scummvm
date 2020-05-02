@@ -15,6 +15,7 @@ Fire up GOG Galaxy, go to the Integrations screen, and this one will be listed u
 The plugin relies on you having already set the games up and got them working through the ScummVM launcher. Essentially I am reading your scummvm.ini file for games, and passing the game names etc to GOG. I'm basing things on the default ScummVM naming pattern, where things are like "Game Name (Platform/Language)", essentially I split off the name before the brackets and that's what I pass. Then for running the games I just call the ScummVM exe and pass it the game ID and everything should work!
 
 ## Known issues
+If you think you can fix any of these, please feel free to do so!
 ### Default locations of ScummVM and the config file
 By default, I'm assuming that your ScummVM is installed in `C:\Program Files\ScummVM\` and that your scummvm.ini file is  `%APPDATA%\ScummVM\scummvm.ini`. This should be how things come out by default if you're not changing the settings and such when you install (please let me know if I'm wrong about this). If you need to change it, at the moment it's hardcoded into plugin.py but should be easy enough for you to find and edit if you need to. Future change would be adding a config file so you can customise it
 ### The platform shows up as "Amiga"
