@@ -1,0 +1,11 @@
+{
+    "name": "ScummVM plugin",
+    "platform": "egg",
+    "guid": "ceb4409d-84be-4e93-84f3-a5a300f0a95c",
+    "version": "0.1",
+    "description": "Plugin for ScummVM games",
+    "author": "Mickey Possingham",
+    "email": "mickey@possingham.net",
+    "url": "https://github.com/micpp42/gog-galaxy-scummvm",
+    "script": "plugin.py"
+}
