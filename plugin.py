@@ -7,7 +7,7 @@ SCUMMVM_INSTALL_PATH = 'C:\\Program Files\\ScummVM\\scummvm.exe'
 SCUMMVM_INI_PATH = os.path.join(os.getenv('appdata'), 'ScummVM\\scummvm.ini')
 
 
-class PluginExample(Plugin):
+class PluginScummVM(Plugin):
 
 
 
@@ -37,7 +37,10 @@ class PluginExample(Plugin):
 
 
     async def authenticate(self, stored_credentials=None):
-        return Authentication('scummvm', 'ScummVM')
+        user_data = {}
+        user_data['username'] = 'ScummVM'
+        self.store_credentials(user_data)
+        return Authentication('scummvm', user_data['username'])
 
 
     async def get_owned_games(self):
@@ -57,7 +60,7 @@ class PluginExample(Plugin):
 
 
 def main():
-    create_and_run_plugin(PluginExample, sys.argv)
+    create_and_run_plugin(PluginScummVM, sys.argv)
 
 # run plugin event loop
 if __name__ == "__main__":
