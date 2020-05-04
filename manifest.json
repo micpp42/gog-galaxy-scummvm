@@ -2,7 +2,7 @@
     "name": "ScummVM plugin",
     "platform": "amiga",
     "guid": "ceb4409d-84be-4e93-84f3-a5a300f0a95c",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Plugin for ScummVM games",
     "author": "Mickey Possingham",
     "email": "mickey@possingham.net",

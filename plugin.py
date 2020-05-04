@@ -15,7 +15,7 @@ class PluginScummVM(Plugin):
     def __init__(self, reader, writer, token):
         super().__init__(
             Platform.Amiga,  # choose platform from available list
-            "0.1",  # version
+            "0.2",  # version
             reader,
             writer,
             token
